@@ -1,0 +1,52 @@
+html,body {
+	background-color: #F2F5F5;
+	height: 100%;
+	position: relative;
+}
+/* 头部的样式 */
+.header {
+	height: 50px;
+	line-height: 50px;
+	padding: 0 25px;
+	color: #333333;
+	font-size: 18px;
+	background-color: #fff;
+}
+/* 信息列表样式 */
+.info-list {
+	margin-top: 8px;
+	background-color: #fff;
+	padding: 20px 35px;
+}
+.reset-div {
+	margin-top: 10px;
+}
+.reset-div>p {
+	font-size: 14px;
+	color: #959595;
+}
+.reset-div>input {
+	width: 100%;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #E6E6E6;
+	height: 20px;
+	font-size: 18px;
+	margin-top: 8px;
+	margin-bottom: 14px;
+	padding-bottom: 8px;
+	color: #323232;
+}
+.reset-div>input[disabled] {
+	background-color: #fff;
+}
+/* 提交按钮样式 */
+.btn {
+	position: absolute;
+	left: 35px;
+	right: 35px;
+	bottom: 50px;
+}
+.weui-btn {
+	background: linear-gradient(to right, #25ABF1 , #2283E2);
+}

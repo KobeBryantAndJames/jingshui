@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>测试详情</title>
+  <link rel="stylesheet" href="../lib/weui/lib/weui.min.css">
+  <link rel="stylesheet" href="../lib/weui/css/jquery-weui.min.css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/machine-detail.css">
+</head>
+
+<body>
+  <!-- 头部区域 -->
+  <div class="header-container">
+    <!-- 返回的图标 -->
+    <span class="icon-box">
+      <i class="fa fa-angle-left"></i>
+    </span>
+    <span class="word">测试详情</span>
+  </div>
+  <!-- 信号强度区域 -->
+  <div class="signal-container pd_30">
+    <span class="code">0000001</span>
+    <p class="signalNumber-box">
+      <span>信号强度:</span>
+      <span class="signal-number" id="signal-number">83</span>
+    </p>
+  </div>
+  <!-- 分割线条区域 -->
+  <div class="line-container">
+  </div>
+  <!-- 机器状态区域 -->
+  <div class="machineStatus-container pd_30">
+    <!-- 标题 -->
+    <span class="title">机器状态</span>
+    <!-- 故障状态 -->
+    <p class="faultStataus-box">
+      <span>故障状态 :</span>
+      <span class="status-val">冰温度传感器故障</span>
+    </p>
+    <!-- ICCID -->
+    <p class="iccid-box">
+      <span>ICCID :</span>
+      <span class="status-val">89860</span>
+    </p>
+    <!-- 开关机状态 -->
+    <p class="openStatus-box">
+      <span>开关机状态 :</span>
+      <span class="status-val">开机</span>
+    </p>
+    <!-- 机器时间 -->
+    <p class="machineTime-box">
+      <span>机器时间 :</span>
+      <span class="status-val">2010-12-12 12:12:12</span>
+    </p>
+    <!-- 在线状态 -->
+    <span class="onlineStatus-box">
+      在线
+    </span>
+  </div>
+  <!-- 运行数据区域 -->
+  <div class="runData-container">
+    <div class="title">运行数据</div>
+    <!-- 出入水TDS -->
+    <div class="runData-box">
+      <p class="inWater">
+        <span>入水TDS :</span><span class="status-val">----</span>
+      </p>
+      <p class="outWater">
+        <span>出水TDS :</span><span class="status-val">----</span>
+      </p>
+    </div>
+    <!-- 原水和冷水温度 -->
+    <div class="runData-box">
+      <p class="rawWater-temp">
+        <span>原水温度 :</span><span class="status-val">30</span>
+      </p>
+      <p class="coldWater-temp">
+        <span>冷水温度 :</span><span class="status-val">20</span>
+      </p>
+    </div>
+    <!-- 热水和累计用水量 -->
+    <div class="runData-box">
+      <p class="hotWater-temp">
+        <span>热水温度 :</span><span class="status-val">90</span>
+      </p>
+      <p class="useWater-consumption">
+        <span>累计用水量 :</span><span class="status-val">----</span>
+      </p>
+    </div>
+  </div>
+  <!-- 控制指令区域 -->
+  <div class="control-container">
+    <div class="title">控制指令</div>
+    <!-- 开机和加热 -->
+    <div class="control-box clearfix">
+      <span class="startUp">开机</span>
+      <span class="heating">加热</span>
+      <span class="shutDown">关机</span>
+      <span class="offWash">冲洗关闭</span>
+      <span class="wash">冲洗</span>
+      <span class="offHeating">加热关闭</span>
+    </div>
+    <!-- 关机 -->
+<!--     <div class="control-box">
+      <span class="shutDown">关机</span>
+      <span class="offWash">冲洗关闭</span>
+    </div> -->
+    <!-- 冲洗 -->
+<!--     <div class="control-box">
+      <span class="wash">冲洗</span>
+      <span class="offHeating">加热关闭</span>
+    </div> -->
+  </div>
+  <!-- 滤芯状态区域 -->
+  <div class="filter-container pd_30">
+    <div class="title">滤芯状态</div>
+    <!-- 表头 -->
+    <div class="status-header">
+      <span class="grade-name">滤芯名称</span>
+      <span class="grade-number">剩余</span>
+      <span class="grade-control">操作&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </div>
+    <div id="filter-list">
+      <!-- 第一级 -->
+      <p class="first-grade">
+        <span class="grade-name">第一级5微米PP滤芯</span>
+        <span class="grade-number">100%</span>
+        <span class="grade-control">滤芯复位</span>
+      </p>
+      <!-- 第二级 -->
+      <p class="second-grade">
+        <span class="grade-name">第二级颗粒活性炭</span>
+        <span class="grade-number">100%</span>
+        <span class="grade-control">滤芯复位</span>
+      </p>
+      <!-- 第三级 -->
+      <p class="third-grade">
+        <span class="grade-name">第三级烧结活性炭</span>
+        <span class="grade-number">100%</span>
+        <span class="grade-control">滤芯复位</span>
+      </p>
+      <!-- 第四级 -->
+      <p class="four-grade">
+        <span class="grade-name">第四级RO膜滤芯</span>
+        <span class="grade-number">100%</span>
+        <span class="grade-control">滤芯复位</span>
+      </p>
+      <!-- 第五级 -->
+      <p class="five-grade">
+        <span class="grade-name">第四级RO膜滤芯</span>
+        <span class="grade-number">100%</span>
+        <span class="grade-control">滤芯复位</span>
+      </p>
+    </div>
+  </div>
+  <!-- 按钮区域 -->
+  <div class="btn-container">
+    <button class="weui-btn weui-btn_primary submit">测试通过</button>
+  </div>
+  <script src="../lib/weui/lib/jquery-2.1.4.js"></script>
+  <script src="../lib/weui/js/jquery-weui.min.js"></script>
+  <script src="../base/js/base.js"></script>
+  <script src="../js/machine-detail.js"></script>
+</body>
+
+</html>

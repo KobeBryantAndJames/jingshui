@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0"
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>海尔租机</title>
+  <link rel="stylesheet" href="../lib/weui/lib/weui.min.css">
+  <link rel="stylesheet" href="../lib/weui/css/jquery-weui.min.css">
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+	<div class="container">
+		<!-- <div class="header">海尔租机</div> -->
+		<div class="main-box">
+			<p class="logo-text">登录</p>
+			<div class="input-box userName-box">
+				<p>用户名</p>
+				<input type="text" placeholder="请输入用户名">
+			</div>
+			<div class="input-box password-box">
+				<p>密码</p>
+				<input type="password" placeholder="请输入密码">
+			</div>
+			<div class="input-box input-code">
+				<p>验证码</p>
+				<input type="text" placeholder="请输入验证码">
+				<canvas id="canvas" width="100px" height="40px"></canvas>
+			</div>
+			<!-- 登录按钮 -->
+			<button class="weui-btn weui-btn weui-btn_primary" id="login-btn">登录</button>
+		</div>
+	</div>
+
+  <script src="../lib/weui/lib/jquery-2.1.4.js"></script>
+  <script src="../lib/weui/lib/fastclick.js"></script>
+  <!-- <script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+  </script> -->
+  <script src="../lib/weui/js/jquery-weui.min.js"></script>
+  <!-- 调用验证码js文件 -->
+  <script src="../js/canvas.js"></script>
+  <!-- 引入自己的js文件 -->
+  <script src="../base/js/base.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+
+</html>

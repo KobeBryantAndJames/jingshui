@@ -1,0 +1,203 @@
+/* 公用的类名 */
+.pd_30 {
+	padding: 0 30px;
+}
+.clearfix:after { 
+	content: "" ; 
+	display: block ;
+	height: 0 ;
+	line-height: 0;
+	clear: both ;
+	visibility: hidden ;
+}
+
+html,body {
+	background-color: #fff;
+}
+/* 顶部区域样式 */
+.header-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #2387E2;
+	height: 40px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	z-index: 1000000;
+}
+/* 顶部返回图标按钮 */
+.header-container .icon-box {
+	position: absolute;
+	left: 0;
+	top: -2px;
+	padding-left: 24px;
+	font-size: 24px;
+}
+.header-container .icon-box i {
+	font-weight: 600;
+}
+
+/* 信号强度样式 */
+.signal-container {
+	margin-top: 40px;
+	height: 60px;
+	line-height: 60px;
+}
+.signal-container .code {
+	font-size: 16px;
+	color: #000000;
+	font-weight: bold;
+}
+.signal-container .signalNumber-box {
+	float: right;
+	color: #000000;
+}
+.signal-container #signal-number {
+	margin-left: 12px;
+}
+
+/* 分割线条 */
+.line-container {
+	height: 15px;
+	background-color: #F0F0F0;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+/* 机器状态样式 */
+.machineStatus-container {
+	position: relative;
+	padding-top: 8px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #CCCCCC;
+	color: #000;
+}
+.title {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+.machineStatus-container>p {
+	font-size: 14px;
+	line-height: 26px;
+}
+.machineStatus-container>p .status-val {
+	display: inline-block;
+	margin-left: 10px;
+}
+.machineStatus-container .onlineStatus-box {
+	position: absolute;
+	top: 8px;
+	right: 30px;
+	color: #67C393;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* 运行数据区域样式 */
+.runData-container {
+	padding-top: 8px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #CCCCCC;
+	color: #000;
+}
+.runData-container .title {
+	padding-left: 30px;
+}
+.runData-container .runData-box {
+
+}
+.runData-container .runData-box>p {
+	display: inline-block;
+	width: 49%;
+	box-sizing: border-box;
+	padding-left: 30px;
+	font-size: 14px;
+	color: #000;
+}
+.runData-container .runData-box>p:last-child {
+	padding-left:18px;
+}
+
+/* 控制指令区域样式 */
+.control-container {
+	padding-top: 8px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #CCCCCC;
+	color: #000;
+}
+.control-container .title {
+	padding-left: 30px;
+}
+.control-container .control-box {
+	/* margin-top: 12px; */
+	padding-bottom: 10px;
+}
+.control-container .control-box:nth-child(2) {
+	/* margin-top: 0; */
+}
+.control-container .control-box>span {
+	display: inline-block;
+	height: 26px;
+	width: 100px;
+	text-align: center;
+	line-height: 26px;
+	font-size: 16px;
+	color: #000;
+	box-sizing: border-box;
+	border: 1px solid #666;
+}
+/* .control-container .control-box>span:first-child {
+	margin-left: 30px;
+}
+.control-container .control-box>span:last-child {
+	margin-left: 20%;
+} */
+.control-container .control-box>span {
+	float: left;
+	margin-left: 40px;
+	margin-top: 12px;
+}
+.control-container .control-box>span:nth-child(even) {
+	margin-left: 50px;
+}
+
+
+/* 滤芯区域样式 */
+.filter-container {
+	padding-top: 8px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #CCCCCC;
+	color: #000;
+	font-size: 16px;
+}
+.filter-container .status-header {
+	font-weight: bold;
+	line-height: 36px;
+}
+.filter-container p {
+	line-height: 30px;
+	font-size: 14px;
+}
+.filter-container .status-header>span,
+.filter-container p>span {
+	display: inline-block;
+}
+.filter-container .grade-name {
+	width: 54%;
+}
+.filter-container .grade-control {
+	float: right;
+}
+
+/* 按钮样式 */
+.btn-container {
+	padding: 30px 90px;
+}
+.btn-container .weui-btn.weui-btn_primary {
+	background-color: #2387e2;
+	font-size: 16px;
+	font-weight: bold;
+}

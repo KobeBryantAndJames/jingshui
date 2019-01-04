@@ -1,0 +1,11 @@
+/* 左浮动和右浮动 */
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/* 隐藏的类名 */
+.hid {
+	display: none;
+}

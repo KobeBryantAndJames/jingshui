@@ -1,0 +1,87 @@
+body {
+	background-color: #fff;
+}
+/* 头部区域样式 */
+.header-container {
+	position: relative;
+	background-color: #2387E2;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+}
+.header-container .goback-icon {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: -2px;
+	padding-left: 24px;
+	font-size:24px;
+	font-weight: bold; 
+}
+/* 用户信息区域 */
+.user-info {
+	height: 80px;
+	border-bottom: 2px solid #CCCCCC;
+	padding: 0 35px;
+	line-height: 80px;
+	color: #000000;
+	font-size: 16px;
+}
+.user-info .user-name {
+	float: left;
+	font-weight: bold;
+}
+.user-info .user-code {
+	float: right;
+}
+.user-info p>span:last-child {
+	margin-left: 8px;
+}
+
+/* 最后登录时间区域样式 */
+.time-container {
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 15px solid #F0F0F0;
+	padding: 0 35px;
+	font-size: 16px;
+	color: #000;
+}
+.time-container span:first-child {
+	float: left;
+}
+.time-container .time-val {
+	float: right;
+	color: #2B84DB;
+	font-size: 14px;
+}
+
+/* 底部按钮区域的样式 */
+.bottom-box {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 56px;
+	line-height: 56px;
+	border-top: 2px solid #666666;
+}
+.bottom-box >span {
+	float: left;
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	background-color: #F0F0F0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+}
+.bottom-box .list-btn {
+	border-right: 1px solid #666666;
+}
+.bottom-box .test-btn {
+	border-left: 1px solid #666666;
+}

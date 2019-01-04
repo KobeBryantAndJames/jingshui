@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0" <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>设备列表</title>
+  <link rel="stylesheet" href="../lib/weui/lib/weui.min.css">
+  <link rel="stylesheet" href="../lib/weui/css/jquery-weui.min.css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <!-- 引入公共样式 和 私有样式 -->
+  <link rel="stylesheet" href="../base/css/base.css">
+  <link rel="stylesheet" href="../css/machine-list.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- 顶部样式 -->
+    <!-- 设备列表头部 -->
+    <div class="header header-list">
+      <span class="uesr-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="word">设备列表</span>
+      <span class="add-machine">
+        <i class="fa fa-plus"></i>
+      </span>
+    </div>
+    <!-- 网器测试头部 -->
+    <div class="header header-test hid">
+      <span class="uesr-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="word">网器测试</span>
+    </div>
+    <!-- 页面主体部分 -->
+    <div class="main-body">
+      <!-- 设备列表 -->
+      <div class="list-box weui-tab">
+        <!-- 顶部tab -->
+        <div class="weui-navbar">
+          <div class="weui-navbar__item weui-bar__item--on" href="#tab1" id="tab1-1">
+            所有设备(<span class="total-count">0</span>)
+            <i class="bottom-line"></i>
+          </div>
+          <div class="weui-navbar__item" href="#tab2" id="tab2-2">
+            已测试(<span class="out-count">0</span>)
+            <i class="bottom-line"></i>
+          </div>
+          <div class="weui-navbar__item" href="#tab3" id="tab3-3">
+            已出库(<span class="notOut-count">0</span>)
+            <i class="bottom-line"></i>
+          </div>
+        </div>
+        <!-- tab切换主体部分 -->
+        <div class="weui-tab__bd">
+          <!-- 分割的线条 -->
+          <span class="line-box"></span>
+          <!-- tab页  -->
+          <!-- 全部列表 -->
+          <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+            <!-- 每一个列表样式 -->
+            <div class="single-container">
+              <div class="index-box"><span>0001</span><span>暂无</span></div>
+              <p class="number-box"><span>序列号:</span><span>0001</span></p>
+              <p class="code-box"><span>机编:</span><span>暂无</span></p>
+              <p class="testTime-box"><span>测试时间:</span><span>2018-09-09</span></p>
+              <p class="outTime-box"><span>出库时间:</span><span>----</span></p>
+              <div class="status-box out-status">已测试</div>
+            </div>
+            <!-- 结束 -->
+          </div>
+          <div id="tab2" class="weui-tab__bd-item">
+            <!-- <h1>已出库设备</h1> -->
+          </div>
+          <div id="tab3" class="weui-tab__bd-item">
+            <!-- <h1>未出库设备</h1> -->
+          </div>
+        </div>
+      </div>
+      <!-- 网器测试 -->
+      <div class="test-box hid">
+        <!-- 搜索框盒子 -->
+        <div class="search-box">
+          <p class="fl">
+            <input type="text" class="search-input">
+            <a href="http://sao315.com/w/api/saoyisao" class="sao-icon"><img src="../images/saoyisao.png"></a>
+          </p>
+          <!-- 确定搜索按钮 -->
+          <span class="search-btn fr">搜索</span>
+        </div>
+        <!-- 分割线盒子 -->
+        <div class="line-box"></div>
+        <!-- 列表盒子 -->
+        <div class="machineDetail-box">
+<!--           <div class="machine-show">
+            <p>
+              <span>11111111</span>
+              <span>信号强度:<span>83</span></span>
+            </p>
+            <p>
+              <span>ICCID:<span class="icc-val">00000</span></span>
+              <span class="run-test">进行测试</span>
+            </p>
+          </div> -->
+        </div>
+      </div>
+
+    </div>
+    <!-- 上一页和下一页按钮 -->
+    <div class="pageTab-box">
+      <span class="page-prve disabled-btn">上一页</span>
+      <span class="page-next">下一页</span>
+    </div>
+
+    <!-- 底部tab切换按钮 -->
+<!--     <div class="bottom-box">
+      <span class="list-btn active fl">设备列表</span>
+      <span class="test-btn fr">网器测试</span>
+    </div>
+  </div> -->
+  <script src="../lib/weui/lib/jquery-2.1.4.js"></script>
+  <script src="../lib/weui/js/jquery-weui.min.js"></script>
+  <script src="../base/js/base.js"></script>
+  <script src="../js/machine-list.js"></script>
+</body>
+
+</html>

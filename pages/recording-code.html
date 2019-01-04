@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>录码</title>
+  <link rel="stylesheet" href="../lib/weui/lib/weui.min.css">
+  <link rel="stylesheet" href="../lib/weui/css/jquery-weui.min.css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/recoding-code.css">
+</head>
+
+<body>
+  <!-- 头部区域 -->
+  <div class="header-box">
+    <a class="goback-icon" href="./machine-list.html">
+      <i class="fa fa-angle-left"></i>
+    </a>
+    <span class="word">录码</span>
+  </div>
+  <!-- 主体区域 -->
+  <div class="content-container">
+    <!-- 序列号区域 -->
+    <div class="serial-number">
+      <p>序列号</p>
+      <input type="text">
+      <div class="icon-box">
+        <img src="../images/success.png" class="success-icon hid">
+        <img src="../images/error.png" class="error-icon hid">
+      </div>
+      <a href="http://sao315.com/w/api/saoyisao" class="add-serNum">
+        <img src="../images/saoyisao.png" alt="">
+      </a>
+    </div>
+    <!-- 机编区域 -->
+    <div class="machine-code">
+      <p>机编</p>
+      <input type="text">
+      <div class="icon-box">
+        <img src="../images/success.png" class="success-icon hid">
+        <img src="../images/error.png" class="error-icon hid">
+      </div>
+      <a href="http://sao315.com/w/api/saoyisao" class="add-machCode">
+        <img src="../images/saoyisao.png" alt="">
+      </a>
+    </div>
+    <!-- 提交按钮 -->
+    <button class="weui-btn weui-btn_primary">提交</button>
+  </div>
+  <script src="../lib/weui/lib/jquery-2.1.4.js"></script>
+  <script src="../lib/weui/js/jquery-weui.min.js"></script>
+  <!-- 引入自己的js文件 -->
+  <script src="../base/js/base.js"></script>
+  <script src="../js/recording-code.js"></script>
+</body>
+
+</html>

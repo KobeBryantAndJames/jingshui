@@ -1,0 +1,311 @@
+html,body {
+	background-color: #fff;
+	height: 100%;
+	min-height: 400px;
+	position: relative;
+}
+.hid {
+	display: none;
+}
+.main-body {
+	position: absolute;
+	width: 100%;
+	top: 41px;
+	bottom: 60px;
+	overflow: auto;
+}
+/* 头部样式 */
+.header {
+	position: relative;
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #F2F5F5;
+	font-weight: 600;
+	color: #fff;
+	background-color: #2283E2;
+}
+/* 用户图标样式 */
+.uesr-icon {
+	position: absolute;
+	left: 0px;
+	padding-left: 20px;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 400;
+}
+/* 添加图标样式 */
+.add-machine {
+	position: absolute;
+	right: 0px;
+	padding-right: 20px;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 100;
+}
+/* 取消tab切换 */
+.weui-navbar__item:after {
+	border: none;
+}
+.weui-navbar:after {
+	border: none;
+}
+.weui-navbar__item {
+	background-color: #fff;
+	color: #333333;
+}
+.bottom-line {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 70%;
+	height: 2px;
+}
+.weui-navbar__item.weui-bar__item--on {
+	background-color: #fff;
+	color: #2283E2;
+}
+.weui-navbar__item.weui-bar__item--on .bottom-line {
+	background-color: #2283E2;
+}
+/* 中间的分割线样式 */
+.weui-tab__bd .line-box {
+	display: inline-block;
+	border-top: 2px solid #ccc;
+}
+.weui-navbar+.weui-tab__bd {
+    padding-top: 45px;
+}
+/* 列表区域样式 */
+.single-container {
+	position: relative;
+	height: 120px;
+	overflow: hidden;
+	border-bottom: 1px solid #CCCCCC;
+	padding-left: 20px;
+	padding-top: 8px;
+}
+/* 第一行样式 */
+.single-container .index-box {
+	font-size: 16px;
+	font-weight: 600;
+}
+.single-container .index-box span:first-child {
+	display: inline-block;
+	width: 60px;
+	text-align: right;
+	color: #007CFF;
+}
+.single-container .index-box span:last-child {
+	margin-left: 12px;
+}
+/* 下面每一行样式 */
+.single-container>p {
+	color: #666;
+	font-size: 14px;
+	line-height: 22px;
+}
+.single-container>p span:first-child {
+	display: inline-block;
+	width: 60px;
+	text-align: right;
+}
+.single-container>p span:last-child {
+	display: inline-block;
+	margin-left: 12px;
+}
+/* 出库状态样式 */
+.single-container .status-box {
+	position: absolute;
+	top: 8px;
+	right: 20px;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	color: #000;
+	background-color: #E1E4E4
+}
+.single-container .status-box.out-status {
+	background-color: #67C393;
+}
+/*继续录码样式 */
+.comeCode {
+	position: absolute;
+	bottom: 20px;
+	right: 30px;
+	font-size: 14px;
+	color: #2283E2;
+}
+
+/* 网器测试区域样式 */
+/* 搜索区域样式 */
+.search-box {
+	height: 50px;
+	line-height: 50px;
+}
+/* 搜索 */
+.search-box>p {
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	height: 100%;
+	width: 74%;
+	margin-left: 16px;
+}
+.search-box>p .search-input {
+	width: 100%;
+	height: 30px;
+	outline: none;
+	border: 1px solid #666666;
+	padding-left: 8px;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #333;
+}
+.sao-icon {
+	position: absolute;
+	right:8px;
+	top: 16px;
+	width: 20px;
+	height: 20px;
+	line-height: 0;
+}
+.sao-icon img {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+/* 确定搜索按钮 */
+.search-box>.search-btn {
+	display: inline-block;
+	width: 16%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-right: 8px;
+	margin-top: 12px;
+	background-color: #2387E2;
+	box-sizing: border-box;
+	border-right: 1px solid #ccc;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 5px;
+}
+
+/* 分割区域样式 */
+.line-box {
+	width: 100%;
+	height: 10px;
+	background-color: #F0F0F0;
+	border-bottom: 2px solid #ccc;
+}
+
+/* 搜索后数据显示的样式 */
+.machine-show {
+	padding: 16px 30px 20px;
+	border-bottom: 1px solid #CCCCCC;
+}
+/* 第一行 */
+.machine-show p:first-child {
+	font-size: 16px;
+	color: #000;
+	height: 30px;
+	line-height: 26px;
+}
+.machine-show p:first-child>span:first-child {
+	float: left;
+	font-weight: bold;
+}
+.machine-show p:first-child>span:last-child {
+	float: right;
+}
+.machine-show p:first-child>span:last-child span {
+	display: inline-block;
+	margin-left: 8px;
+}
+/* 第二行样式 */
+.machine-show p:last-child {
+	margin-top: 18px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #000;
+}
+.machine-show p:last-child>span:first-child {
+	float: left;
+}
+.machine-show p:last-child>span:first-child span {
+	display: inline-block;
+	margin-left: 4px;
+}
+.machine-show p:last-child>span:last-child {
+	float: right;
+	border: 1px solid #666666;
+	border-radius: 3px;
+	padding: 0 10px;
+}
+
+/* 分页按钮区域样式 */
+.pageTab-box {
+	position: absolute;
+	left: 0;
+	bottom:60px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	padding-top: 5px;
+}
+.pageTab-box>span {
+	display: inline-block;
+	font-size: 14px;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #2387E2;
+	border-radius: 5px;
+	color: #fff;
+}
+.pageTab-box>span.disabled-btn {
+	background-color: #E1E4E4;
+}
+.pageTab-box .page-next {
+	margin-left: 30px;
+
+}
+
+/* 底部区域样式 */
+.bottom-box {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 56px;
+	line-height: 56px;
+	border-top: 2px solid #666666;
+}
+.bottom-box >span {
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	background-color: #fff;
+	font-size: 16px;
+}
+.bottom-box >span.active {
+	background-color: #2387E2;
+	color: #fff;
+	font-weight: bolder;
+}
+.bottom-box .list-btn {
+	border-right: 1px solid #666666;
+}
+.bottom-box .test-btn {
+	border-left: 1px solid #666666;
+}

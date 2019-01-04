@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+	<script src="./base/js/base.js"></script>
+	<script>
+		console.log(localStorage.getItem('token'))
+		// 判断token是否存在
+		if (localStorage.getItem('token')) {
+			// 保存登录时间
+			localStorage.setItem('loginTime', nowLocalTime())
+			// 跳转设备列表页
+			location.href = "./pages/machine-list.html"
+		} else {
+			// location.href="./pages/machine-list.html"
+			location.href = './pages/login.html'
+		}
+	</script>
+</body>
+
+</html>

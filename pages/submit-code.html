@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>录码提交</title>
+  <link rel="stylesheet" href="../lib/weui/lib/weui.min.css">
+  <link rel="stylesheet" href="../lib/weui/css/jquery-weui.min.css">
+  <!-- 引入自己的css文件 -->
+  <link rel="stylesheet" href="../css/submit-code.css">
+</head>
+<body>
+  <!-- 头部区域 -->
+  <div class="header">
+    <p>新增设备录入成功</p>
+  </div>
+
+  <!-- 信息区域 -->
+  <div class="info-list">
+    <!-- 机编信息 -->
+    <div class="reset-div machine-code">
+      <p>机编</p>
+      <input type="text" disabled>
+    </div>
+    <!-- 序列号信息 -->
+    <div class="reset-div serial-number">
+      <p>序列号</p>
+      <input type="text" disabled>
+    </div>
+    <!-- 扫码时间信息 -->
+    <div class="reset-div sao-time">
+      <p>扫码时间</p>
+      <input type="text" disabled>
+    </div>
+  </div>
+  <!-- 提交按钮 -->
+  <div class="btn">
+    <button class="weui-btn weui-btn_primary">进行测试</button>
+  </div>
+
+  <script src="../lib/weui/lib/jquery-2.1.4.js"></script>
+  <script src="../lib/weui/js/jquery-weui.min.js"></script>
+	<!-- 引入自己的js 文件-->
+  <script src="../base/js/base.js"></script>
+  <script src="../js/submit-code.js"></script>
+</body>
+</html>

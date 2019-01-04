@@ -1,0 +1,59 @@
+body {
+	background-color: #FFFFFF;
+}
+/* 头部样式 */
+.header {
+	height: 35px;
+	font-size: 16px;
+	border-bottom: 1px solid #E6E6E6;
+	text-align: center;
+	line-height: 35px;
+	box-sizing: border-box;
+	color: #333333;
+}
+/* 主体区域样式 */
+.main-box {
+	padding: 40px 30px;
+}
+.logo-text {
+	font-size: 28px;
+	font-weight: 600;
+	color: #2283E2;
+}
+/* 输入框样式 */
+.input-box p {
+	color: #999999;
+	font-size: 16px;
+}
+.input-box input {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 10px;
+	outline: none;
+	border: 0;
+	font-size: 16px;
+	border-bottom: 1px solid #E6E6E6;
+}
+.userName-box {
+	margin-top: 40px;
+}
+.password-box,
+.input-code {
+	margin-top: 30px;
+	position: relative;
+}
+.input-code input {
+	width: 60%;
+}
+/* 验证码区域 */
+#canvas {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	text-align: right;
+}
+#login-btn {
+	margin-top: 50px;
+	background: linear-gradient(to right, #25ABF1 , #2283E2);
+}
